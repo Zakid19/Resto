@@ -1,117 +1,89 @@
 @extends('layouts.front')
 @section('content')
-<section id="" class="book-a-table">
-    <div class="container mt-5" data-aos="fade-up">
-
-      <div class="section-header">
-        <h2>Book A Table</h2>
-        <p>Book <span>Your Stay</span> With Us</p>
-      </div>
-
-      <div class="row g-0">
-
-        {{-- <div class="col-lg-6 reservation-img" style="background-image: url(/admin/assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div> --}}
-
-        {{-- <div class="col-lg-6 d-flex align-items-center reservation-form-bg">
-            <form action="{{ route('reservation.storeStepOne') }}" method="post" >
-                @csrf
-                <div class="mb-3">
-                    <label for="Name">Name</label>
-                    <input class="form-control" id="name" name="name" type="text" placeholder="" value="{{ $reservation->name ?? '' }}">>
-                    @error('name')
-                        <div class="mt-2 text-danger">{{ $message }}</div>
-                    @enderror
+<div id="booking-page" class="page-hero-section division">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="hero-txt text-center white-color">
+                    <h2 class="h2-xl">Reserve A Table</h2>
                 </div>
-                <div class="mb-3">
-                    <label for="Name">Email</label>
-                    <input class="form-control" id="email" name="email" type="email" placeholder=""
-                    value="{{ $reservation->email ?? '' }}">
-                    @error('email')
-                        <div class="mt-2 text-danger">{{ $message }}</div>
-                    @enderror
-                </div>
-                <div class="mb-3">
-                    <label for="Name">No Telp</label>
-                    <input class="form-control" id="no_tlp" name="no_tlp" type="tel" placeholder="" value="{{ $reservation->no_tlp ?? '' }}">
-                    @error('no_tlp')
-                        <div class="mt-2 text-danger">{{ $message }}</div>
-                    @enderror
-                </div>
-                <div class="mb-3">
-                    <label for="Name">Res Date</label>
-                    <input class="form-control" id="res_date" name="res_date" type="datetime-local" placeholder="" value="{{ $reservation->res_date ?? '' }}">
-                    @error('res_date')
-                        <div class="mt-2 text-danger">{{ $message }}</div>
-                    @enderror
-                </div>
-                <div class="mb-3">
-                    <label for="Name">Guest</label>
-                    <input class="form-control" id="guest_number" name="guest_number" type="number" placeholder="" value="{{ $reservation->guest_number ?? '' }}">
-                    @error('guest_number')
-                        <div class="mt-2 text-danger">{{ $message }}</div>
-                    @enderror
-                </div>
-                <div class="mb-0">
-                    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
-                </div>
-            </form>
-        </div> --}}
-
-        <div class="col-lg-6 reservation-img" style="background-image: url(/admin/assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
-
-        <div class="col-lg-6 d-flex align-items-center reservation-form-bg">
-          <form action="{{ route('reservation.storeStepOne') }}" method="post" >
-            @csrf
-            <div class="row gy-4 mb-3 p-3">
-              <div class="col-lg-12 col-md-6">
-                <label class="mb-1" for="Name">Name</label>
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                value="{{ $reservation->name ?? '' }}">
-                @error('name')
-                    <div class="mt-2 text-danger">{{ $message }}</div>
-                @enderror
-              </div>
-              <div class="col-lg-12 col-md-6">
-                <label class="mb-1" for="Email">Email</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email"
-                value="{{ $reservation->email ?? '' }}">
-                @error('email')
-                    <div class="mt-2 text-danger">{{ $message }}</div>
-                @enderror
-              </div>
-              <div class="col-lg-12 col-md-6">
-                <label class="mb-1" for="No Tlp">No Tlp</label>
-                <input type="tel" name="no_tlp" class="form-control" id="no_tlp" placeholder="No Tlp"
-                value="{{ $reservation->no_tlp ?? '' }}">
-                @error('no_tlp')
-                    <div class="mt-2 text-danger">{{ $message }}</div>
-                @enderror
-              </div>
-              <div class="col-lg-12 col-md-6">
-                <label class="mb-1" for="Res Date">Res Date</label>
-                <input type="datetime-local" name="res_date" class="form-control" id="res_date"
-                min="{{ $min_date->format('Y-m-d\TH:i:s') }}"
-                max="{{ $max_date->format('Y-m-d\TH:i:s') }}"
-                value="{{ $reservation ? $reservation->res_date->format('Y-m-d\TH:i:s') : '' }}">
-                @error('res_date')
-                    <div class="mt-2 text-danger">{{ $message }}</div>
-                @enderror
-              </div>
-              <div class="col-lg-12 col-md-6">
-                <label class="mb-1" for="Guest Number">Guest Number</label>
-                <input type="number" name="guest_number" class="form-control" id="guest_number" placeholder="Guest Number"
-                value="{{ $reservation->guest_number ?? '' }}">
-                @error('guest_number')
-                    <div class="mt-2 text-danger">{{ $message }}</div>
-                @enderror
-              </div>
             </div>
-            <div class="text-center"><button type="submit" class="btn btn-danger">Next</button></div>
-          </form>
-        </div><!-- End Reservation Form -->
+        </div>	  <!-- End row -->
+    </div>	   <!-- End container -->
+</div>
 
-      </div>
+<div id="booking-2" class="wide-70 booking-section division">
+    <div class="container">
+         <div class="row">
 
-    </div>
-</section>
+
+            <!-- BOOKING FORM -->
+             <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                 <div class="form-holder">
+
+                     <!-- Text -->
+                    <p class="p-xl text-center">
+                        Fill in the form below or give us a call <a href="tel:123456789">789-654-3210</a>
+                    </p>
+
+                    <form action="{{ route('reservation.storeStepOne') }}" method="post" >
+                        @csrf
+
+                          <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name .." value="{{ $reservation->name ?? '' }}">
+                            @error('name')
+                                <div class="mt-2 text-danger">{{ $message }}</div>
+                            @enderror
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" placeholder="Your Email .." value="{{ $reservation->email ?? '' }}">
+                            @error('email')
+                                <div class="mt-2 text-danger">{{ $message }}</div>
+                            @enderror
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="no tlp" class="form-label">No Telp</label>
+                            <input type="tel" class="form-control" name="no_tlp" id="no_tlp" placeholder="No Telp .." value="{{ $reservation->no_tlp ?? '' }}">
+                            @error('no_tlp')
+                                <div class="mt-2 text-danger">{{ $message }}</div>
+                            @enderror
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="res date" class="form-label">Res Date</label>
+                            <input type="datetime-local" class="form-control" name="res_date" id="res_date" placeholder=""
+                            min="{{ $min_date->format('Y-m-d\TH:i:s') }}"
+                            max="{{ $max_date->format('Y-m-d\TH:i:s') }}"
+                            value="{{ $reservation ? $reservation->res_date->format('Y-m-d\TH:i:s') : '' }}"
+                            <span class="text-xs">Pilih waktu dari jam berikut 17:00-23:00.</span>
+                            @error('res_date')
+                                <div class="mt-2 text-danger">{{ $message }}</div>
+                            @enderror
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="name" class="form-label">Guest Number</label>
+                            <input type="text" class="form-control" name="guest_number" id="guest_number" placeholder="Total Guest .." value="{{ $reservation->guest_number ?? '' }}">
+                            @error('guest_number')
+                                <div class="mt-2 text-danger">{{ $message }}</div>
+                            @enderror
+                          </div>
+
+
+                        <!-- Form Button -->
+                        <div class="col-md-12 mt-10">
+                            <button type="submit" class="btn btn-sm btn-red tra-red-hover submit">Next</button>
+                        </div>
+                    </form>
+
+                 </div>
+             </div>	<!-- END BOOKING FORM -->
+
+        </div>	<!-- End row -->
+    </div>	   <!-- End container -->
+</div>
 @endsection

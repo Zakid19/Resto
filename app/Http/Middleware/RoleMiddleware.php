@@ -17,6 +17,7 @@ class RoleMiddleware
      */
     public function handle(Request $request, Closure $next, $role)
     {
+        // Jika Tidak role admin atau role_id 1 maka akan error 403
         if ($role == 'admin' && auth()->user()->role_id != '1') {
             abort(code:403);
         }

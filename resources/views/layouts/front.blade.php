@@ -1,165 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Resto</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="author" content="Jthemes"/>
+		<meta name="description" content="Testo - Pizza and Fast Food Landing Page Template"/>
+		<meta name="keywords" content="Jthemes, Food, Fast Food, Restaurant, Pizzeria, Restaurant Menu, Pizza, Burger, Sushi, Steak, Grill, Snack">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  		<!-- SITE TITLE -->
+		<title>Testo - Pizza and Fast Food Landing Page Template</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+		<!-- FAVICON AND TOUCH ICONS -->
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/frontend/images/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" sizes="152x152" href="/frontend/images/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/frontend/images/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/frontend/images/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" href="/frontend/images/apple-touch-icon.png">
+		<link rel="icon" href="/frontend/images/apple-touch-icon.png" type="image/x-icon">
 
-  <!-- Vendor CSS Files -->
-  <link href="/frontend/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/frontend/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="/frontend/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="/frontend/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="/frontend/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+		<!-- GOOGLE FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lilita+One&amp;display=swap" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="/frontend/assets/css/main.css" rel="stylesheet">
+		<!-- BOOTSTRAP CSS -->
+		<link href="/frontend/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Yummy - v1.2.1
-  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+		<!-- FONT ICONS -->
+		<link href="../../../../../use.fontawesome.com/releases/v5.11.0/css/all.css" rel="stylesheet" crossorigin="anonymous">
+		<link href="css/flaticon.css" rel="stylesheet">
 
-<body>
+		<!-- PLUGINS STYLESHEET -->
+		<link href="/frontend/css/menu.css" rel="stylesheet">
+		<link href="/frontend/css/magnific-popup.css" rel="stylesheet">
+		<link href="/frontend/css/flexslider.css" rel="stylesheet">
+		<link href="/frontend/css/owl.carousel.min.css" rel="stylesheet">
+		<link href="/frontend/css/owl.theme.default.min.css" rel="stylesheet">
+		<link href="/frontend/css/jquery.datetimepicker.min.css" rel="stylesheet">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
+		<!-- TEMPLATE CSS -->
+		<link href="/frontend/css/style.css" rel="stylesheet">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Resto<span>.</span></h1>
-      </a>
+		<!-- RESPONSIVE CSS -->
+		<link href="/frontend/css/responsive.css" rel="stylesheet">
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="{{ route('welcome.index') }}">Home</a></li>
-          <li><a href="{{ route('category.index') }}">Category</a></li>
-          <li><a href="{{ route('menu.index') }}">Menu</a></li>
-          <li><a href="{{ route('reservation.stepOne') }}">Reservation</a></li>
-        </ul>
-      </nav><!-- .navbar -->
+	</head>
 
-      @auth
-      <div class="mr-0">
-        <a class="btn-book-a-table" href="{{ route('logout') }}">Logout</a>
-      </div>
-      @endauth
+	<body>
 
-      @guest
-      <div class="mr-0">
-        <a class="btn-book-a-table" href="{{ route('login') }}">Login</a>
-        <a class="btn-book-a-table" href="{{ route('register') }}">Register</a>
-      </div>
-      @endguest
+		<div id="loader-wrapper">
+			<div id="loader">
+				<div class="cssload-spinner">
+					<div class="cssload-ball cssload-ball-1"></div>
+					<div class="cssload-ball cssload-ball-2"></div>
+					<div class="cssload-ball cssload-ball-3"></div>
+					<div class="cssload-ball cssload-ball-4"></div>
+				</div>
+			</div>
+		</div>
 
-    </div>
-  </header><!-- End Header -->
+		<!-- HEADER-1
+		============================================= -->
+		<header id="header-1" class="header navik-header header-shadow center-menu-1 header-transparent">
+			<div class="container">
 
-  <main id="main">
-        @yield('content')
-  </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+				<!-- NAVIGATION MENU -->
+				<div class="navik-header-container">
 
-    <div class="container">
-      <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
-          <div>
-            <h4>Address</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022 - US<br>
-            </p>
-          </div>
 
-        </div>
+					<!-- CALL BUTTON -->
+				    <div class="callusbtn"><a href="tel:123456789"><i class="fas fa-phone"></i></a></div>
 
-        <div class="col-lg-3 col-md-6 footer-links d-flex">
-          <i class="bi bi-telephone icon"></i>
-          <div>
-            <h4>Reservations</h4>
-            <p>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-        </div>
 
-        <div class="col-lg-3 col-md-6 footer-links d-flex">
-          <i class="bi bi-clock icon"></i>
-          <div>
-            <h4>Opening Hours</h4>
-            <p>
-              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
-              Sunday: Closed
-            </p>
-          </div>
-        </div>
+					<!-- LOGO IMAGE -->
+	                <div class="logo" data-mobile-logo="/frontend/images/logo-01.png" data-sticky-logo="/frontend/images/logo-01.png">
+	                	<a href="{{ route('welcome.index') }}"><img src="/frontend/images/logo-01.png" alt="header-logo"/></a>
+					</div>
 
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Follow Us</h4>
-          <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
 
-      </div>
-    </div>
+					<!-- BURGER MENU -->
+					<div class="burger-menu">
+						<div class="line-menu line-half first-line"></div>
+						<div class="line-menu"></div>
+						<div class="line-menu line-half last-line"></div>
+					</div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Yummy</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
 
-  </footer><!-- End Footer -->
-  <!-- End Footer -->
+					<!-- MAIN MENU -->
+	                <nav class="navik-menu menu-caret navik-yellow">
+	                	<ul class="top-list">
 
-  {{-- <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> --}}
+	                		<!-- DROPDOWN MENU -->
+                            <li><a href="{{ route('welcome.index') }}">Home</a>
+	                		</li>
 
-  {{-- <div id="preloader"></div> --}}
+	                		<li><a href="{{ route('category.index') }}">Category</a>
+	                		</li>
 
-  <!-- Vendor JS Files -->
-  <script src="/frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/frontend/assets/vendor/aos/aos.js"></script>
-  <script src="/frontend/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="/frontend/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="/frontend/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="/frontend/assets/vendor/php-email-form/validate.js"></script>
+	                		<!-- DROPDOWN MENU -->
+	                    	<li><a href="{{ route('menu.index') }}">Menu</a>
+	                        </li>
 
-  <!-- Template Main JS File -->
-  <script src="/frontend/assets/js/main.js"></script>
+	                        <!-- MEGA MENU -->
+	                        <li class="mega-menu"><a href="{{ route('reservation.stepOne') }}">Reservation</a>
+							</li>	<!-- END MEGA MENU -->
 
-</body>
+						</ul>
 
+                        <ul>
+
+                            @guest
+                            <div class="d-flex justify-content-end pt-3">
+                                <li class="">
+                                    <a href="{{ route('login') }}">Login</a>
+                                </li>
+
+                                <!-- DROPDOWN MENU -->
+                                <li>
+                                    <a href="{{ route('register') }}">Register</a>
+                                </li>
+
+                            </div>
+                            @endguest
+
+							@auth
+	                		<li class="d-flex justify-content-end">
+                                <a href="{{ route('logout') }}">Logout</a>
+	                		</li>
+                            @endauth
+	                    </ul>
+	                </nav>	<!-- END MAIN MENU -->
+
+
+				</div>	<!-- END NAVIGATION MENU -->
+
+
+			</div>     <!-- End container -->
+		</header>	<!-- END HEADER-1 -->
+
+
+		<!-- PAGE CONTENT
+		============================================= -->
+		<div id="page" class="page">
+
+            @yield('content')
+
+            <footer id="footer-4" class="footer division">
+				<div class="container grey-color">
+
+					<!-- BOTTOM FOOTER -->
+					<div class="bottom-footer">
+						<div class="row d-flex align-items-center">
+
+
+							<!-- FOOTER COPYRIGHT -->
+							<div class="col-md-5 col-lg-6">
+								<div class="footer-copyright">
+									<p>&copy; 2020 Testo. All Rights Reserved</p>
+								</div>
+							</div>
+
+
+							<!-- BOTTOM FOOTER LINKS -->
+							<div class="col-md-7 col-lg-6">
+								<ul class="bottom-footer-list text-right clearfix">
+									<li><p class="first-list-link"><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></p></li>
+									<li><p><a href="#"><i class="fab fa-twitter"></i> Twitter</a></p></li>
+									<li><p><a href="#"><i class="fab fa-youtube"></i> YouTube</a></p></li>
+									<li><p class="last-li"><a href="#"><i class="fab fa-yelp"></i> Yelp</a></p></li>
+								</ul>
+							</div>
+
+
+						</div>  <!-- End row -->
+					</div>	<!-- END BOTTOM FOOTER -->
+
+                    {{-- <div class="row">
+                        <div class="col-md-12 col-lg-12 col-xl-">
+							<div class="footer-info mb-40 text-center">
+
+								<!-- Footer Logo -->
+								<div class="footer-logo"><img src="/frontend/images/logo-01.png" alt="footer-logo"/></div>
+
+								<!-- Footer Copyright -->
+								<p>&copy; 2020 Testo. All Rights Reserved</p>
+
+							</div>
+						</div>
+
+
+					</div> --}}
+
+
+				</div>	   <!-- End container -->
+			</footer>
+
+		</div>	<!-- END PAGE CONTENT -->
+
+
+		<!-- EXTERNAL SCRIPTS
+		============================================= -->
+		<script src="/frontend/js/jquery-3.5.1.min.js"></script>
+		<script src="/frontend/js/bootstrap.min.js"></script>
+		<script src="/frontend/js/modernizr.custom.js"></script>
+		<script src="/frontend/js/jquery.easing.js"></script>
+		<script src="/frontend/js/jquery.appear.js"></script>
+		<script src="/frontend/js/jquery.scrollto.js"></script>
+		<script src="/frontend/js/menu.js"></script>
+		<script src="/frontend/js/materialize.js"></script>
+		<script src="/frontend/js/jquery.flexslider.js"></script>
+		<script src="/frontend/js/owl.carousel.min.js"></script>
+		<script src="/frontend/js/jquery.magnific-popup.min.js"></script>
+		<script src="/frontend/js/contact-form.js"></script>
+		<script src="/frontend/js/comment-form.js"></script>
+		<script src="/frontend/js/booking-form.js"></script>
+		<script src="/frontend/js/jquery.datetimepicker.full.js"></script>
+		<script src="/frontend/js/jquery.validate.min.js"></script>
+		<script src="/frontend/js/jquery.ajaxchimp.min.js"></script>
+
+		<!-- Custom Script -->
+		<script src="/frontend/js/custom.js"></script>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!-- [if lt IE 9]>
+			<script src="js/html5shiv.js" type="text/javascript"></script>
+			<script src="js/respond.min.js" type="text/javascript"></script>
+		<![endif] -->
+
+		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
+		<!--
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-XXXXX-X']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		-->
+
+
+		{{-- <script defer src="/frontend/js/changer.js"></script>   --}}
+
+
+
+	</body>
 </html>

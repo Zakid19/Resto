@@ -26,9 +26,13 @@ class DateResto implements Rule
      */
     public function passes($attribute, $value)
     {
+        $pickupDate = Carbon::parse($value);
+        $lastDate = Carbon::now()->addWeek();
 
         // Bisa dialankan jika (tanggal yang dimasukan) lebih dari tanggal sekarang
         // && dan sebelum minggu depan
+
+        return $value >= now() && $value <= $lastDate;
     }
 
     /**
@@ -38,6 +42,6 @@ class DateResto implements Rule
      */
     public function message()
     {
-        return 'Silahkan pilih tanggal atau dari seminggu sekarang';
+        return 'Silahkan pilih tanggal dari sekarang atau dari seminggu ini';
     }
 }

@@ -74,3 +74,4 @@ Route::get('reservation', [ReservationController::class, 'index']);
 Route::post('reservation', [ReservationController::class, 'store']);
 Route::get('reservation/{reservation}/show', [ReservationController::class, 'show']);
 Route::put('reservation/{reservation}/update', [ReservationController::class, 'update']);
+Route::delete('reservation/{reservation}/delete', [ReservationController::class, 'destroy']);

@@ -75,13 +75,9 @@ Route::group(['middleware' => 'auth'], function() {
     Route::group(['middleware' => 'role:user', 'prefix' => 'user'], function () {
 
     });
-
-    Route::get('dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
 });
 
-Route::get('welcome', [FrontController::class, 'welcome'])->name('welcome.index');
+Route::get('/', [FrontController::class, 'welcome'])->name('welcome.index');
 
 Route::get('category', [FrontendCategoryController::class, 'index'])->name('category.index');
 Route::get('category/{category:name}/show', [FrontendCategoryController::class, 'show'])->name('category.show');

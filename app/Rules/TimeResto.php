@@ -26,7 +26,14 @@ class TimeResto implements Rule
      */
     public function passes($attribute, $value)
     {
+        $pickupDate = Carbon::parse($value);
+        $pickupTime = Carbon::createFromTime($pickupDate->hour, $pickupDate->minute, $pickupDate->second);
 
+        // Kapan Restoran dibuka
+        $earliestTime = Carbon::createFromTimeString('17:00:00');
+        $lastTime = Carbon::createFromTimeString('23:00:00');
+
+        return $pickupTime->between($earliestTime, $lastTime) ? true : false;
     }
 
     /**

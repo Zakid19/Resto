@@ -166,9 +166,12 @@
                     <div class="dropdown-item-icon"><i data-feather="settings"></i></div>
                     Account
                 </a>
-                <a class="dropdown-item" href="{{ route('logout') }}">
+                <a class="dropdown-item" href="">
                     <div class="dropdown-item-icon"><i data-feather="log-out"></i></div>
-                    Logout
+                    <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <button>Logout</button>
+                    </form>
                 </a>
             </div>
         </li>

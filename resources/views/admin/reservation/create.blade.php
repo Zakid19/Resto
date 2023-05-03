@@ -8,7 +8,7 @@
             @include('layouts.alert')
             <div id="default">
                 <div class="card mb-4">
-                    <div class="card-header">Table Create</div>
+                    <div class="card-header">Reservation Create</div>
                     <div class="card-body">
                         <!-- Component Preview-->
                         <div class="sbp-preview">

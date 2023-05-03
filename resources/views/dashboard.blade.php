@@ -1,299 +1,788 @@
 @extends('layouts.front')
 
-<section id="hero" class="hero d-flex align-items-center section-bg">
-    <div class="container">
-      <div class="row justify-content-between gy-5">
-        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
-          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#book-a-table" class="btn-book-a-table">Book a Table</a>
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-          </div>
-        </div>
-        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-          <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
-        </div>
-      </div>
-    </div>
-</section><!-- End Hero Section -->
 @section('content')
-<!-- ======= About Section ======= -->
-  <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
 
-      <div class="section-header">
-        <h2>About Us</h2>
-        <p>Learn More <span>About Us</span></p>
-      </div>
+<section id="hero-1" class="hero-section division">
 
-      <div class="row gy-4">
-        <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg) ;" data-aos="fade-up" data-aos-delay="150">
-          <div class="call-us position-absolute">
-            <h4>Book a Table</h4>
-            <p>+1 5589 55488 55</p>
-          </div>
-        </div>
-        <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
-          <div class="content ps-0 ps-lg-5">
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-            </p>
+    <!-- SLIDER -->
+    <div class="slider">
+        <ul class="slides">
 
-            <div class="position-relative mt-4">
-              <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
-              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+
+            <!-- SLIDE #1 -->
+            <li id="slide-1">
+
+                <!-- Background Image -->
+                <img src="/frontend/images/slider/slide-1.jpg" alt="slide-background">
+
+                <!-- Image Caption -->
+                <div class="caption d-flex align-items-center center-align">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="caption-txt white-color">
+
+                                    <!-- Title -->
+                                    <div class="title"><h2>Good Time, Great Taste</h2></div>
+
+                                    <!-- Text -->
+                                    <p>Open Daily: <span class="yellow-color">11:30PM - 8:30PM</span></p>
+
+                                </div>
+                            </div>
+                        </div>  <!-- End row -->
+                    </div>  <!-- End container -->
+                </div>	<!-- End Image Caption -->
+
+            </li>	<!-- END SLIDE #1 -->
+
+
+            <!-- SLIDE #2 -->
+            <li id="slide-2">
+
+                <!-- Background Image -->
+                <img src="/frontend/images/slider/slide-2.jpg" alt="slide-background">
+
+                <!-- Image Caption -->
+                <div class="caption d-flex align-items-center center-align">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="caption-txt white-color">
+
+                                    <!-- Title -->
+                                    <div class="title"><h2>Discover The Real Burgers</h2></div>
+
+                                    <!-- Text -->
+                                    <p>Enjoy the food you love <span class="yellow-color">FROM $6.99</span></p>
+
+                                </div>
+                            </div>
+                        </div>  <!-- End row -->
+                    </div>  <!-- End container -->
+                </div>	<!-- End Image Caption -->
+
+            </li>	<!-- END SLIDE #2 -->
+
+
+            <!-- SLIDE #3 -->
+            <li id="slide-3">
+
+                <!-- Background Image -->
+                <img src="/frontend/images/slider/slide-3.jpg" alt="slide-background">
+
+                <!-- Image Caption -->
+                <div class="caption d-flex align-items-center center-align">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="caption-txt white-color">
+
+                                    <!-- Title -->
+                                    <div class="title"><h2>Big Burger, Little Money</h2></div>
+
+                                    <!-- Text -->
+                                    <p>Order Now: <span class="yellow-color"><a href="tel:123456789">789-654-3210</a></span></p>
+
+                                </div>
+                            </div>
+                        </div>  <!-- End row -->
+                    </div>  <!-- End container -->
+                </div>	<!-- End Image Caption -->
+
+            </li>	<!-- END SLIDE #3 -->
+
+        </ul>
+    </div>	<!-- END SLIDER -->
+
+</section>
+
+<section id="about-3" class="wide-60 about-section division">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+
+
+            <!-- ABOUT IMAGE -->
+            <div class="col-md-5 col-lg-6">
+                <div class="about-3-img text-center mb-40">
+                    <img class="img-fluid" src="/frontend/images/about-01-img.png" alt="about-image">
+                </div>
             </div>
-          </div>
+
+
+            <!-- ABOUT TEXT -->
+            <div class="col-md-7 col-lg-6">
+                <div class="about-3-txt mb-40">
+
+                    <!-- Title -->
+                    <h2 class="h2-sm coffee-color">Nothing brings people together like a good burger</h2>
+
+                    <!-- Text -->
+                    <p class="p-md grey-color">Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus
+                        feugiat dolor lacinia cubilia curae at integer orci congue and metus in mollislorem primis gravida
+                    </p>
+
+                    <!-- Icons List -->
+                    <div class="abox-2-wrapper ico-70">
+                        <div class="row text-center">
+
+                            <!-- ABOUT BOX #1 -->
+                            <div class="col-sm-3">
+                                <div class="abox-2">
+
+                                    <!-- Icon -->
+                                    <div class="abox-2-ico grey-color"><span class="flaticon-burger"></span></div>
+
+                                    <!-- Text -->
+                                    <h6 class="h6-lg">Burgers</h6>
+
+                                </div>
+                            </div>
+
+                            <!-- ABOUT BOX #2 -->
+                            <div class="col-sm-3">
+                                <div class="abox-2">
+
+                                    <!-- Icon -->
+                                    <div class="abox-2-ico grey-color"><span class="flaticon-french-fries"></span></div>
+
+                                    <!-- Text -->
+                                    <h6 class="h6-lg">Fries</h6>
+
+                                </div>
+                            </div>
+
+                            <!-- ABOUT BOX #3 -->
+                            <div class="col-sm-3">
+                                <div class="abox-2">
+
+                                    <!-- Icon -->
+                                    <div class="abox-2-ico grey-color"><span class="flaticon-fried-chicken"></span></div>
+
+                                    <!-- Text -->
+                                    <h6 class="h6-lg">Chicken</h6>
+
+                                </div>
+                            </div>
+
+                            <!-- ABOUT BOX #4 -->
+                            <div class="col-sm-3">
+                                <div class="abox-2">
+
+                                    <!-- Icon -->
+                                    <div class="abox-2-ico grey-color"><span class="flaticon-salad"></span></div>
+
+                                    <!-- Text -->
+                                    <h6 class="h6-lg">Salads</h6>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>	<!-- End Icons List -->
+
+                </div>
+            </div>	<!-- END ABOUT TEXT -->
+
+
+        </div>	   <!-- End row -->
+    </div>	   <!-- End container -->
+</section>
+
+<section id="menu-8" class="wide-70 menu-section division">
+    <div class="container">
+
+        <!-- SECTION TITLE -->
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="section-title mb-60 text-center">
+                    <!-- Title 	-->
+                    <h2 class="h2-xl red-color">Explore Our Category</h2>
+                </div>
+            </div>
         </div>
-      </div>
-
-    </div>
-  </section><!-- End About Section -->
-
-  <!-- ======= Stats Counter Section ======= -->
-  <section id="stats-counter" class="stats-counter">
-    <div class="container" data-aos="zoom-out">
-
-      <div class="row gy-4">
-
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item text-center w-100 h-100">
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Clients</p>
-          </div>
-        </div><!-- End Stats Item -->
-
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item text-center w-100 h-100">
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
-          </div>
-        </div><!-- End Stats Item -->
-
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item text-center w-100 h-100">
-            <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hours Of Support</p>
-          </div>
-        </div><!-- End Stats Item -->
-
-        <div class="col-lg-3 col-md-6">
-          <div class="stats-item text-center w-100 h-100">
-            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Workers</p>
-          </div>
-        </div><!-- End Stats Item -->
-
-      </div>
-
-    </div>
-  </section><!-- End Stats Counter Section -->
-
-  <!-- ======= Menu Section ======= -->
-  <section id="menu" class="menu">
-    <div class="container" data-aos="fade-up">
-
-      <div class="section-header">
-        <h2>Our Menu</h2>
-        <p>Check Our <span>Yummy Menu</span></p>
-      </div>
 
 
-      <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+        <!-- TABS NAVIGATION -->
+        <div id="tabs-nav">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <ul class="tabs-1 ico-55 red-tabs clearfix">
 
-        <div class="tab-pane fade active show" id="menu-starters">
+                        <!-- TAB-1 LINK -->
+                        <li class="tab-link current" data-tab="tab-1">
+                            <span class="flaticon-burger"></span>
+                            <h5 class="h5-sm">Burgers</h5>
+                        </li>
 
-          <div class="tab-header text-center">
-            <p>Menu</p>
-            <h3>Starters</h3>
-          </div>
+                        <!-- TAB-2 LINK -->
+                        <li class="tab-link" data-tab="tab-2">
+                            <span class="flaticon-fries"></span>
+                            <h5 class="h5-sm">Deserts</h5>
+                        </li>
 
-          <div class="row gy-5">
+                        {{-- <!-- TAB-3 LINK -->
+                        <li class="tab-link" data-tab="tab-3">
+                            <span class="flaticon-salad-1"></span>
+                            <h5 class="h5-sm">Salads</h5>
+                        </li>
 
-            @foreach($specials->menus as $menu)
-            <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="{{ Storage::url($menu->image) }}" class="menu-img img-fluid" alt=""></a>
-                <h4>{{ $menu->name }}</h4>
-                <p class="ingredients">
-                    {{ $menu->description }}
-                </p>
-                <p class="price">
-                  ${{ $menu->price }}
-                </p>
-            </div><!-- Menu Item -->
+                        <!-- TAB-3 LINK -->
+                        <li class="tab-link" data-tab="tab-4">
+                            <span class="flaticon-doughnut"></span>
+                            <h5 class="h5-sm">Drink</h5>
+                        </li> --}}
+
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- END TABS NAVIGATION -->
+
+
+        <!-- TABS CONTENT -->
+        <div id="tabs-content">
+
+
+            <!-- TAB-1 CONTENT -->
+            <div id="tab-1" class="tab-content current">
+                <div class="row">
+                    @foreach($burgers->menus as $menu)
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="menu-7-item">
+
+                            <!-- IMAGE -->
+                            <div class="menu-7-img rel">
+
+                                <!-- Image -->
+                                <img class="img-fluid" src="{{ Storage::url($menu->image) }}" alt="menu-image" />
+
+                                <!-- Price -->
+                                <div class="menu-7-price bg-coffee">
+                                    <h5 class="h5-xs yellow-color">Rp. {{ $menu->price }}</h5>
+                                </div>
+
+                                <!-- Rating -->
+                                <div class="item-rating">
+                                    <div class="stars-rating stars-lg">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Like Icon -->
+                                <div class="like-ico ico-20">
+                                    <a href="#"><span class="flaticon-heart"></span></a>
+                                </div>
+
+                            </div>
+
+                            <!-- TEXT -->
+                            <div class="menu-7-txt rel">
+
+                                <!-- Title -->
+                                <h5 class="h5-sm coffee-color">{{ $menu->name }}</h5>
+
+                                <!-- Description -->
+                                <p class="grey-color">{{ $menu->description }}</p>
+
+                                <!-- Button -->
+                                <a href="product-single.html" class="btn btn-sm btn-tra-grey yellow-hover">
+                                    <span class="flaticon-shopping-bag"></span> Add to Cart
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    @endforeach
+                </div>  <!-- End row -->
+            </div>	<!-- END TAB-1 CONTENT -->
+
+
+            <!-- TAB-2 CONTENT -->
+            <div id="tab-2" class="tab-content">
+                <div class="row">
+                    @foreach($deserts->menus as $menu)
+                    <!-- MENU ITEM #1 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="menu-7-item">
+
+                            <!-- IMAGE -->
+                            <div class="menu-7-img rel">
+
+                                <!-- Image -->
+                                <img class="img-fluid" src="{{ Storage::url($menu->image) }}" alt="menu-image" />
+
+                                <!-- Price -->
+                                <div class="menu-7-price bg-coffee">
+                                    <h5 class="h5-xs yellow-color">RP. {{ $menu->price }}</h5>
+                                </div>
+
+                                <!-- Rating -->
+                                <div class="item-rating">
+                                    <div class="stars-rating stars-lg">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Like Icon -->
+                                <div class="like-ico ico-20">
+                                    <a href="#"><span class="flaticon-heart"></span></a>
+                                </div>
+
+                            </div>
+
+                            <!-- TEXT -->
+                            <div class="menu-7-txt rel">
+
+                                <!-- Title -->
+                                <h5 class="h5-sm coffee-color">{{ $menu->name }}</h5>
+
+                                <!-- Description -->
+                                <p class="grey-color">{{ $menu->description }}</p>
+
+                                <!-- Button -->
+                                <a href="product-single.html" class="btn btn-sm btn-tra-grey yellow-hover">
+                                    <span class="flaticon-shopping-bag"></span> Add to Cart
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>	<!-- END MENU ITEM #1 -->
+                    @endforeach
+                </div>  <!-- End row -->
+            </div>	<!-- END TAB-2 CONTENT -->
+
+
+            <!-- TAB-3 CONTENT -->
+            <div id="tab-3" class="tab-content">
+                <div class="row">
+
+                    <!-- MENU ITEM #1 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="menu-7-item">
+
+                            <!-- IMAGE -->
+                            <div class="menu-7-img rel">
+
+                                <!-- Image -->
+                                <img class="img-fluid" src="images/menu/salad-01.png" alt="menu-image" />
+
+                                <!-- Price -->
+                                <div class="menu-7-price bg-coffee">
+                                    <h5 class="h5-xs yellow-color">$7.99</h5>
+                                </div>
+
+                                <!-- Rating -->
+                                <div class="item-rating">
+                                    <div class="stars-rating stars-lg">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Like Icon -->
+                                <div class="like-ico ico-20">
+                                    <a href="#"><span class="flaticon-heart"></span></a>
+                                </div>
+
+                            </div>
+
+                            <!-- TEXT -->
+                            <div class="menu-7-txt rel">
+
+                                <!-- Title -->
+                                <h5 class="h5-sm coffee-color">Greek Salad</h5>
+
+                                <!-- Description -->
+                                <p class="grey-color">Tomatoes, cucumbers, olives, feta cheese, red onion, olive oil</p>
+
+                                <!-- Button -->
+                                <a href="product-single.html" class="btn btn-sm btn-tra-grey yellow-hover">
+                                    <span class="flaticon-shopping-bag"></span> Add to Cart
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>	<!-- END MENU ITEM #1 -->
+
+                </div>  <!-- End row -->
+            </div>	<!-- END TAB-3 CONTENT -->
+
+
+            <!-- TAB-4 CONTENT -->
+            <div id="tab-4" class="tab-content">
+                <div class="row">
+
+                    <!-- MENU ITEM #1 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="menu-7-item">
+
+                            <!-- IMAGE -->
+                            <div class="menu-7-img rel">
+
+                                <!-- Image -->
+                                <img class="img-fluid" src="images/menu/dessert-01.png" alt="menu-image" />
+
+                                <!-- Price -->
+                                <div class="menu-7-price bg-coffee">
+                                    <h5 class="h5-xs yellow-color">$8.50</h5>
+                                </div>
+
+                                <!-- Rating -->
+                                <div class="item-rating">
+                                    <div class="stars-rating stars-lg">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Like Icon -->
+                                <div class="like-ico ico-20">
+                                    <a href="#"><span class="flaticon-heart"></span></a>
+                                </div>
+
+                            </div>
+
+                            <!-- TEXT -->
+                            <div class="menu-7-txt rel">
+
+                                <!-- Title -->
+                                <h5 class="h5-sm coffee-color">Strawberry Caken</h5>
+
+                                <!-- Description -->
+                                <p class="grey-color">Strawberry, soft cheese, icing sugar, butter softened</p>
+
+                                <!-- Button -->
+                                <a href="product-single.html" class="btn btn-sm btn-tra-grey yellow-hover">
+                                    <span class="flaticon-shopping-bag"></span> Add to Cart
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>	<!-- END MENU ITEM #1 -->
+
+                </div>  <!-- End row -->
+            </div>	<!-- END TAB-4 CONTENT -->
+
+
+        </div>	<!-- END TABS CONTENT -->
+
+
+    </div>	   <!-- End container -->
+</section>
+
+<section id="menu-6" class="wide-70 menu-section division">
+    <div class="container">
+
+
+        <!-- SECTION TITLE -->
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="section-title mb-60 text-center">
+
+                    <!-- Title 	-->
+                    <h2 class="h2-xl red-color">Explore Our Menu</h2>
+
+                    <!-- Text -->
+                    <p class="p-xl">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor
+                        primis libero tempus, blandit a cursus varius magna
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            @foreach($menus as $menu)
+            <!-- MENU ITEM #1 -->
+            <div class="col-sm-6 col-lg-3">
+                <div class="menu-6-item bg-white">
+
+                    <!-- IMAGE -->
+                    <div class="menu-6-img rel">
+                        <div class="hover-overlay">
+
+                            <!-- Image -->
+                            <img class="img-fluid" src="{{ Storage::url($menu->image) }}" alt="menu-image" />
+
+                            <!-- Item Code -->
+                            <span class="item-code bg-tra-dark">Code: 0850</span>
+
+                            <!-- Zoom Icon -->
+                            <div class="menu-img-zoom ico-25">
+                                <a href="images/menu/burger-11.jpg" class="image-link">
+                                    <span class="flaticon-zoom"></span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- TEXT -->
+                    <div class="menu-6-txt rel">
+
+                        <!-- Rating -->
+                        <div class="item-rating">
+                            <div class="stars-rating stars-lg">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+
+                        <!-- Like Icon -->
+                        <div class="like-ico ico-25">
+                            <a href="#"><span class="flaticon-heart"></span></a>
+                        </div>
+
+                        <!-- Title -->
+                        <h5 class="h5-sm coffee-color">{{ $menu->name }}</h5>
+
+                        <!-- Description -->
+                        <p class="grey-color">{{ $menu->description }}</p>
+
+                        <!-- Price -->
+                        <div class="menu-6-price bg-coffee">
+                            <h5 class="h5-xs yellow-color">RP. {{ $menu->price }}</h5>
+                        </div>
+
+                        <!-- Add To Cart -->
+                        <div class="add-to-cart bg-yellow ico-10">
+                            <a href="product-single.html"><span class="flaticon-shopping-bag"></span> Add to Cart</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
             @endforeach
 
-          </div>
-        </div><!-- End Starter Menu Content -->
+        </div>	  <!-- End row -->
+    </div>	   <!-- End container -->
+</section>
 
-      </div>
+<section id="promo-7" class="wide-100 promo-section division">
+    <div class="container">
 
-    </div>
-  </section><!-- End Menu Section -->
 
-  <!-- ======= Chefs Section ======= -->
-  <section id="chefs" class="chefs section-bg">
-    <div class="container" data-aos="fade-up">
-
-      <div class="section-header">
-        <h2>Chefs</h2>
-        <p>Our <span>Proffesional</span> Chefs</p>
-      </div>
-
-      <div class="row gy-4">
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-          <div class="chef-member">
-            <div class="member-img">
-              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Walter White</h4>
-              <span>Master Chef</span>
-              <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
-            </div>
-          </div>
-        </div><!-- End Chefs Member -->
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-          <div class="chef-member">
-            <div class="member-img">
-              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Sarah Jhonson</h4>
-              <span>Patissier</span>
-              <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
-            </div>
-          </div>
-        </div><!-- End Chefs Member -->
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-          <div class="chef-member">
-            <div class="member-img">
-              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>William Anderson</h4>
-              <span>Cook</span>
-              <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
-            </div>
-          </div>
-        </div><!-- End Chefs Member -->
-
-      </div>
-
-    </div>
-  </section><!-- End Chefs Section -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container" data-aos="fade-up">
-
-      <div class="section-header">
-        <h2>Contact</h2>
-        <p>Need Help? <span>Contact Us</span></p>
-      </div>
-
-      <div class="row gy-4">
-
-        <div class="col-md-6">
-          <div class="info-item  d-flex align-items-center">
-            <i class="icon bi bi-map flex-shrink-0"></i>
-            <div>
-              <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
-            </div>
-          </div>
-        </div><!-- End Info Item -->
-
-        <div class="col-md-6">
-          <div class="info-item d-flex align-items-center">
-            <i class="icon bi bi-envelope flex-shrink-0"></i>
-            <div>
-              <h3>Email Us</h3>
-              <p>contact@example.com</p>
-            </div>
-          </div>
-        </div><!-- End Info Item -->
-
-        <div class="col-md-6">
-          <div class="info-item  d-flex align-items-center">
-            <i class="icon bi bi-telephone flex-shrink-0"></i>
-            <div>
-              <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
-            </div>
-          </div>
-        </div><!-- End Info Item -->
-
-        <div class="col-md-6">
-          <div class="info-item  d-flex align-items-center">
-            <i class="icon bi bi-share flex-shrink-0"></i>
-            <div>
-              <h3>Opening Hours</h3>
-              <div><strong>Mon-Sat:</strong> 11AM - 23PM;
-                <strong>Sunday:</strong> Closed
-              </div>
-            </div>
-          </div>
-        </div><!-- End Info Item -->
-
-      </div>
-
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+        <!-- SECTION TITLE -->
         <div class="row">
-          <div class="col-xl-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-xl-6 form-group">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
-      <!--End Contact Form -->
+            <div class="col-lg-10 offset-lg-1">
+                <div class="section-title mb-60 text-center">
 
-    </div>
-  </section><!-- End Contact Section -->
+                    <!-- Title 	-->
+                    <h2 class="h2-xl red-color">Our Best Offers</h2>
+
+                    <!-- Text -->
+                    <p class="p-xl">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor
+                        primis libero tempus, blandit a cursus varius magna
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row d-flex align-items-center">
+
+            @foreach($menus as $menu)
+            <div class="col-lg-4">
+                <div class="pbox-7 clearfix">
+
+                    <!-- Image -->
+                    <div class="pbox-7-img rel">
+                        <div class="hover-overlay">
+
+                            <!-- Image -->
+                            <img class="img-fluid" src="{{ Storage::url($menu->image) }}" alt="promo-image" />
+
+                            <!-- Item Code -->
+                            <span class="item-code bg-tra-dark">Code: 0961</span>
+
+                            <!-- Zoom Icon -->
+                            <div class="menu-img-zoom ico-25">
+                                <a href="images/img-01.jpg" class="image-link">
+                                    <span class="flaticon-zoom"></span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Text -->
+                    <div id="pb-7-1" class="pbox-7-txt rel">
+
+                        <!-- Rating -->
+                        <div class="item-rating">
+                            <div class="stars-rating stars-lg">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+
+                        <!-- Like Icon -->
+                        <div class="like-ico ico-25">
+                            <a href="#"><span class="flaticon-heart"></span></a>
+                        </div>
+
+                        <!-- Title -->
+                        <h4 class="h4-xs coffee-color">{{ $menu->name }}</h4>
+
+                        <!-- Text -->
+                        <p class="grey-color">{{ $menu->description }}</p>
+
+                        <!-- Price -->
+                        <div class="pbox-7-price">
+                            <h5 class="h5-lg red-color"><span class="old-price">$11.80</span> $9.99</h5>
+                        </div>
+
+                        <!-- Add To Cart -->
+                        <div class="add-to-cart bg-yellow ico-10">
+                            <a href="product-single.html"><span class="flaticon-shopping-bag"></span> Add to Cart</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            @endforeach
+
+        </div>    <!-- End row -->
+    </div>	   <!-- End container -->
+</section>
+
+
+<section id="blog-1" class="wide-60 blog-section division">
+    <div class="container">
+
+
+        <!-- SECTION TITLE -->
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="section-title mb-60 text-center">
+
+                    <!-- Title 	-->
+                    <h2 class="h2-xl red-color">Events & Catering</h2>
+
+                    <!-- Text -->
+                    <p class="p-xl">Aliquam a augue suscipit, luctus neque purus ipsum neque undo dolor
+                        primis libero tempus, blandit a cursus varius magna
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- BLOG POSTS HOLDER -->
+        <div class="row">
+
+
+            <!-- BLOG POST #1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="blog-post">
+
+                    <!-- BLOG POST IMAGE -->
+                    <div class="blog-post-img">
+                        <div class="hover-overlay">
+                            <img class="img-fluid" src="images/blog/img-01.jpg" alt="blog-post-image" />
+                        </div>
+                    </div>
+
+                    <!-- BLOG POST TITLE -->
+                    <div class="blog-post-txt">
+
+                        <!-- Post Title -->
+                        <h5 class="h5-lg coffee-color"><a href="single-post.html">Quaerat neque purus ipsum neque dolor</a></h5>
+
+                        <!-- Post Text -->
+                        <p class="grey-color">Quaerat neque purus ipsum neque dolor primis tempus impedit</p>
+
+                    </div>
+
+                </div>
+            </div>	<!-- END  BLOG POST #1 -->
+
+
+            <!-- BLOG POST #2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="blog-post">
+
+                    <!-- BLOG POST IMAGE -->
+                    <div class="blog-post-img">
+                        <div class="hover-overlay">
+                            <img class="img-fluid" src="images/blog/img-02.jpg" alt="blog-post-image" />
+                        </div>
+                    </div>
+
+                    <!-- BLOG POST TEXT -->
+                    <div class="blog-post-txt">
+
+                        <!-- Post Title -->
+                        <h5 class="h5-lg coffee-color"><a href="single-post.html">Tempor blandit sapien at gravida donec ipsum</a></h5>
+
+                        <!-- Post Text -->
+                        <p class="grey-color">Neque dolor primis libero tempus impedit tempor sapien gravida</p>
+
+                    </div>
+
+                </div>
+            </div>	<!-- END  BLOG POST #2 -->
+
+
+            <!-- BLOG POST #3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="blog-post">
+
+                    <!-- BLOG POST IMAGE -->
+                    <div class="blog-post-img">
+                        <div class="hover-overlay">
+                            <img class="img-fluid" src="images/blog/img-03.jpg" alt="blog-post-image" />
+                        </div>
+                    </div>
+
+                    <!-- BLOG POST TEXT -->
+                    <div class="blog-post-txt">
+
+                        <!-- Post Title -->
+                        <h5 class="h5-lg coffee-color"><a href="single-post.html">Neque dolor primis a libero tempus a tempor</a></h5>
+
+                        <!-- Post Text -->
+                        <p class="grey-color">Impedit tempor at donec sapien ipsum a neque dolor primis libero</p>
+
+                    </div>
+
+                </div>
+            </div>	<!-- END  BLOG POST #3 -->
+
+
+        </div>	<!-- END BLOG POSTS HOLDER -->
+
+
+    </div>	   <!-- End container -->
+</section>
+
 @endsection
